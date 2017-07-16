@@ -1,0 +1,21 @@
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a routerLink="/" class="navbar-brand">Experimental demos</a>
+		</div>
+
+		<ul class="nav navbar-nav">
+			<li dropdown>
+				<a href dropdownToggle (click)="false">Service related demos</a>
+				<ul *dropdownMenu class="dropdown-menu">
+					<li>
+						<a class="dropdown-item" routerLink="/blocking-service-request">Blocking service with observables</a>
+					</li>
+					<li>
+						<a class="dropdown-item" routerLink="/">Shared data between multiple browser tabs</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>

@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+	padding-top: 70px;
+	margin: 0 60px;
+	background-color: #eee;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		padding-top: 140px;
+		margin: 0;
+	}
+}
+
+.page {
+	background-color: #fff;
+	border: 1px solid #aaa;
+	box-shadow: 2px 2px 2px #aaa;
+}
