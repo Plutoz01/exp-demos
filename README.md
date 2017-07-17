@@ -18,8 +18,8 @@ Actual solution uses a simple boolean flag to operate as a binary semaphore.
 ## Shared data between multiple browser tabs
 
 This demo show how can sync a model between multiple tabs of a single browser through local storage.
-### TODO
-		
+
+`Note:` Open multiple tabs since sync works beetween them.
 
 ## Development server
 
