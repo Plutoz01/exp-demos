@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderNavigationComponent } from './header-navigation/header-navigation.component';
-import { DemoListComponent } from './demo-list/demo-list.component';
+import { HeaderNavigationComponent } from './components/header-navigation/header-navigation.component';
+import { DemoListComponent } from './components/demo-list/demo-list.component';
 import { BsDropdownModule } from 'ngx-bootstrap';
 import { RouterModule } from '@angular/router';
+import { LocalStorageService } from './services/local-storage.service';
 
 @NgModule( {
 	imports: [
@@ -15,9 +16,13 @@ import { RouterModule } from '@angular/router';
 		HeaderNavigationComponent,
 		DemoListComponent
 	],
+	providers: [
+		LocalStorageService
+	],
 	exports: [
 		HeaderNavigationComponent,
 		DemoListComponent
 	]
 } )
-export class SharedModule {}
+export class SharedModule {
+}
