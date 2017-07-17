@@ -1,0 +1,24 @@
+<div class="row">
+	<div class="col-xs12">
+		<p>Note: Open this page in another tab, then modify the input field's content and click on Sync button. The other tab(s) should shows exactly the same values</p>
+		<h3>Demo item:</h3>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-6 text-right">name:</div>
+	<div class="col-xs-6">
+		<input type="text" [(ngModel)]="demoItem.name">
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-6 text-right">description:</div>
+	<div class="col-xs-6">
+		<input [(ngModel)]="demoItem.description">
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-xs-12 text-center">
+		<button class="btn btn-primary" (click)="onUpdate()">Sync</button>
+	</div>
+</div>
