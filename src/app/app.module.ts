@@ -6,6 +6,7 @@ import { AppRouting } from './app.routing';
 import { BlockingServiceRequestModule } from './blocking-service-request/blocking-service-request.module';
 import { SharedModule } from './shared/shared.module';
 import { TabSyncModule } from './tab-sync/tab-sync.module';
+import { SyncedPriorityServiceModule } from './synced-priority-service/synced-priority-service.module';
 
 @NgModule( {
 	declarations: [
@@ -15,6 +16,7 @@ import { TabSyncModule } from './tab-sync/tab-sync.module';
 		AppRouting,
 		BrowserModule,
 		SharedModule,
+		SyncedPriorityServiceModule,
 		BlockingServiceRequestModule,
 		TabSyncModule
 	],
