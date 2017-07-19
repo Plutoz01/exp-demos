@@ -6,7 +6,10 @@
 
 		<h1>Service related demos</h1>
 
-		<h2>Synchronous priority task runner</h2>
+		<h2>Synchronous prioritized task runner</h2>
+		Generic task runner service to ensure tasks run only one-by-one instead of parallel. First job will start automatically, then all following tasks will be collected until the first task finished.
+		Only one task will be select to run next based on a priorizer function. Remaining tasks will be rejected.
+
 		<button class="btn btn-primary" routerLink="/synced-priority-service">Open demo</button>
 
 

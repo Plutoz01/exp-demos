@@ -6,6 +6,13 @@ This is a collection of demos related (but not only) to Angular.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
 
 # Service related demos
+
+## Synchronous prioritized task runner
+Generic task runner service to ensure tasks run only one-by-one instead of parallel.
+
+First job will start automatically, then all following tasks will be collected until the first task finished.
+Only one task will be select to run next based on a priorizer function. Remaining tasks will be rejected.
+
 ## Blocking service with observables
 This demo tries to demonstrate how can various observables evaluted strictly in a linear order.
 
